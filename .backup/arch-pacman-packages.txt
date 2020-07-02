@@ -42,6 +42,7 @@ fuse3
 fuseiso
 fzf
 galculator
+gcolor2
 gcc
 geany
 geary
