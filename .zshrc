@@ -1,1 +1,0 @@
-/home/jolzee/.zsh/zshrc
