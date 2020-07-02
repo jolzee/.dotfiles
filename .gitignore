@@ -1,0 +1,43 @@
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+!tags/
+*.pyc
+*.sw[nop]
+.DS_Store
+.bundle
+.byebug_history
+.env
+/bower_components/
+/log
+/node_modules/
+/tmp
+/vendor
+db/*.sqlite3
+log/*.log
+rerun.txt
+tags
+tmp/**/*
+.xsession*
+.*_history
+.fasd
+.*.lock
+.dmrc
+.*_back
+.*.pid
+.lesshst
+.viminfo
+.local
+.ssh
