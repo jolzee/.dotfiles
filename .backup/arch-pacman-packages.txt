@@ -31,6 +31,7 @@ exa
 exfat-utils
 expac
 fasd
+figlet
 file-roller
 filezilla
 firefox
@@ -73,7 +74,6 @@ gnome-multi-writer
 gnome-music
 gnome-nettool
 gnome-photos
-gnome-recipes
 gnome-remote-desktop
 gnome-screenshot
 gnome-session
@@ -116,7 +116,7 @@ haveged
 intel-ucode
 kdenlive
 libnewt
-libreoffice-fresh
+libreoffice-still
 lightdm-gtk-greeter
 lightdm-webkit-theme-litarvan
 lightsoff

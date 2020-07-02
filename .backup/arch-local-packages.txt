@@ -1,10 +1,11 @@
+nvm
+ulauncher
 espanso
 etcher-bin
 fsearch-git
 gksu
 lightdm-settings
 lightdm-slick-greeter
-nvm
 octopi
 p3x-onenote
 pamac-aur
@@ -14,10 +15,8 @@ spaceship-prompt-git
 spotify
 teams
 teamviewer
-ulauncher
 update-grub
 vivaldi
-vivaldi-snapshot-ffmpeg-codecs
 vivaldi-widevine
+vivaldi-codecs-ffmpeg-extra-bin
 whatsapp-nativefier-dark
-yay-git
