@@ -10,6 +10,7 @@ octopi
 p3x-onenote
 pamac-aur
 python2-xcb-proto
+selectdefaultapplication-git
 slack-desktop
 spaceship-prompt-git
 spotify
