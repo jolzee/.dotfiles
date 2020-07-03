@@ -1,0 +1,53 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/zsh: .zsh
+    ~/.zsh: .zsh
+    ~/.zshrc: 
+        force: true
+        path: .zsh/zshrc
+    ~/.bash_profile: 
+        force: true
+        path: .bash_profile
+    ~/.bash_logout: 
+        force: true
+        path: .bash_logout
+    ~/.bashrc: 
+        force: true
+        path: .bashrc
+    ~/.gitconfig: .gitconfig
+    ~/.fonts: .fonts
+    ~/.icons: .icons
+    ~/.themes: .themes
+    ~/.SpaceVim.d: .SpaceVim.d
+    ~/.config/alacritty: .config/alacritty
+    ~/.config/autostart: 
+        force: true
+        path: .config/autostart
+    ~/.config/espanso: .config/espanso
+    ~/.config/fontconfig: .config/fontconfig
+    ~/.config/geany: .config/geany
+    ~/.config/gpick: .config/gpick
+    ~/.config/gtk-2.0: 
+        force: true
+        path: .config/gtk-2.0
+    ~/.config/gtk-3.0: 
+        force: true
+        path: .config/gtk-3.0
+    ~/.config/gtk-4.0: 
+        force: true
+        path: .config/gtk-4.0
+    ~/.config/neofetch: 
+        force: true
+        path: .config/neofetch
+    ~/Pictures/wallpapers: .config/wallpapers
+
+- create:
+    - ~/Pictures/wallpapers
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

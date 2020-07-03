@@ -1,3 +1,4 @@
+base-devel
 alacritty
 alsa-plugins
 alsa-utils
@@ -109,9 +110,7 @@ libnewt
 libreoffice-still
 lightdm-gtk-greeter
 lightdm-webkit-theme-litarvan
-linux
 linux-firmware
-linux-headers
 lsb-release
 lsof
 lzop

@@ -40,7 +40,7 @@
 <color_source type="string">color_picker</color_source>
 <dragging_moves type="bool">true</dragging_moves>
 <minimize_to_tray type="bool">false</minimize_to_tray>
-<paned_position type="int32">473</paned_position>
+<paned_position type="int32">485</paned_position>
 <save_restore_palette type="bool">true</save_restore_palette>
 <secondary_color_source type="string"></secondary_color_source>
 <single_instance type="bool">false</single_instance>
@@ -50,7 +50,7 @@
 <height type="int32">809</height>
 <width type="int32">720</width>
 <x type="int32">0</x>
-<y type="int32">25</y>
+<y type="int32">28</y>
 </window>
 </main>
 <options type="dynv">

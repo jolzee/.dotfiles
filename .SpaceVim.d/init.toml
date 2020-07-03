@@ -41,3 +41,6 @@ default_height = 30
 
 [[layers]]
 name = "lang#javascript"
+
+[[layers]]
+name = "fzf"
