@@ -24,6 +24,10 @@ installpackage() {
 
 iterlines $filename installpackage
 
+# register and start espanso
+espanso register
+espanso start
+
 clear
 figlet Finished
 exit 0
