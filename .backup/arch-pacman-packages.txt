@@ -1,4 +1,3 @@
-base-devel
 alacritty
 alsa-plugins
 alsa-utils
@@ -8,6 +7,7 @@ autofs
 automake
 baobab
 base
+base-devel
 bash-completion
 bind-tools
 binutils
@@ -43,8 +43,8 @@ fuse3
 fuseiso
 fzf
 galculator
-gcolor2
 gcc
+gcolor2
 geany
 geary
 gedit
@@ -76,6 +76,7 @@ gnome-screenshot
 gnome-session
 gnome-settings-daemon
 gnome-shell
+gnome-shell-extension-shelltile-git
 gnome-shell-extensions
 gnome-software
 gnome-sound-recorder
