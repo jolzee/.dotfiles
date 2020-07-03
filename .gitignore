@@ -41,3 +41,4 @@ tmp/**/*
 .viminfo
 .local
 .ssh
+.config/geany/geany_socket_manjaro__1
