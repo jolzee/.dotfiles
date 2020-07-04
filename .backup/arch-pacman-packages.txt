@@ -77,8 +77,6 @@ gnome-session
 gnome-settings-daemon
 gnome-shell
 gnome-shell-extension-shelltile-git
-gnome-shell-extensions
-gnome-software
 gnome-sound-recorder
 gnome-system-monitor
 gnome-themes-extra
@@ -198,7 +196,6 @@ vim-vcscommand
 vim-vital
 vim-workspace
 vino
-virtualbox-guest-utils
 w3m
 wget
 xdg-user-dirs
