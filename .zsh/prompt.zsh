@@ -56,19 +56,7 @@ function promptSetup () {
     CURRENT_USER=`whoami`
     PR_SIGN=$NOCOLOR
     PR_SIGN+=" %{$fg[white]%}"
-    MYHOSTEXPRESSION="archlinux"
-
-    # prepend the hostname if we are outside
-    if [[ "$MYHOSTEXPRESSION" == "" ]]; then
-        # if not set, home is nowhere
-        MYHOSTEXPRESSION="^$"
-    fi
-    if [[ "`hostname`" =~ "$MYHOSTEXPRESSION" ]]; then
-        # we are on our home desktop
-    else
-        # we are outside on a server
-        PR_SIGN+="`hostname` "
-    fi
+    
 
     # setup the main sign
     if [[ $CURRENT_USER == 'root' ]]; then
