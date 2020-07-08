@@ -8,3 +8,5 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 source /usr/share/nvm/init-nvm.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -147,6 +147,10 @@ updateAurMirrorList() {
     echo " "${countries[@]}"" | fmt -c -w 80
     exit 1; fi
 
+
+  # Run as specific user
+  # sudo -u $SUDO_USER <your command>
+  
   # Root user access test
   if [ $EUID != 0 ]; then
     echo "Root user access required"; exit 1; fi

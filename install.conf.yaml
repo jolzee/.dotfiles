@@ -5,6 +5,12 @@
 - clean: ['~']
 
 - link:
+    ~/.vimrc: 
+        force: true
+        path: .vimrc
+    ~/.vim: 
+        force: true
+        path: .vim
     ~/.config/zsh: .zsh
     ~/.zsh: .zsh
     ~/.zshrc: 
