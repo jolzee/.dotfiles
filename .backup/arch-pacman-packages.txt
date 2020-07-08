@@ -181,6 +181,7 @@ nano
 nautilus-typeahead
 neofetch
 neovim
+python-pynvim
 network-manager-applet
 networkmanager
 networkmanager-openconnect

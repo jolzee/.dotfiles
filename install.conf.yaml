@@ -11,6 +11,9 @@
     ~/.vim: 
         force: true
         path: .vim
+    ~/.config/nvim:
+        force: true
+        path: .config/nvim
     ~/.config/zsh: .zsh
     ~/.zsh: .zsh
     ~/.zshrc: 
@@ -29,7 +32,6 @@
     ~/.fonts: .fonts
     ~/.icons: .icons
     ~/.themes: .themes
-    ~/.SpaceVim.d: .SpaceVim.d
     ~/.config/alacritty: .config/alacritty
     ~/.config/autostart: 
         force: true

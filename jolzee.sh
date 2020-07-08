@@ -20,9 +20,8 @@ show_menus() {
   echo "2. Install Pacman Packages"
   echo "3. DotBot Setup"
   echo "4. Install Yay"
-  echo "5. Install SpaceVim"
-  echo "6. Install AUR Packages"
-  echo "7. Rank AUR Mirrors for Region"
+  echo "5. Install AUR Packages"
+  echo "6. Rank AUR Mirrors for Region"
   echo "q. Exit"
   read_options
 }
@@ -65,14 +64,6 @@ installYay() {
   yay --editmenu --nodiffmenu --save
   yay
   cd cwd
-  waitForKeyPress
-  show_menus
-}
-
-installSpaceVim() {
-  clear
-  echo "Installing SpaceVim"
-  curl -sLf https://spacevim.org/install.sh | bash
   waitForKeyPress
   show_menus
 }
@@ -237,9 +228,8 @@ read_options(){
     2)  installPacmanPackages ;;
     3)  dotBotSetup ;;
     4)  installYay ;;
-    5)  installSpaceVim ;;
-    6)  installAURPackages ;;
-    7)  updateAurMirrorList ;;
+    5)  installAURPackages ;;
+    6)  updateAurMirrorList ;;
     q)  clear && exit 0;;
     *) echo -e "${RED}Can not match with any selected${STD}" && sleep 1
   esac
