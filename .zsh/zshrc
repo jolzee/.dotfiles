@@ -9,6 +9,7 @@
 
 # first include of the environment
 source $HOME/.config/zsh/environment.zsh
+source ~/.zinit/bin/zinit.zsh
 
 typeset -ga sources
 sources+="$ZSH_CONFIG/environment.zsh"
@@ -46,6 +47,9 @@ sources+="$ZSH_CONFIG/fzf.zsh"
 
 # Private aliases and adoptions added at the very end (e.g. to start byuobu)
 sources+="$ZSH_CONFIG/private.final.zsh"
+
+# zinit plugins - https://github.com/zdharma/zinit
+sources+="$ZSH_CONFIG/zinit-plugins.zsh"
 
 # try to include all sources
 foreach file (`echo $sources`)
