@@ -18,7 +18,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'vim-syntastic/syntastic'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 Plug 'pangloss/vim-javascript'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-commentary'
@@ -73,6 +73,7 @@ set scrolloff=4                 " keep 4 lines off the edges of the screen when 
 set virtualedit=all             " allow the cursor to go in to "invalid" places
 set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
+nnoremap <silent> <Space> :noh<CR><Space> " press space to clear highlighted searches
 set gdefault                    " search/replace "globally" (on a line) by default
 set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
 
@@ -362,8 +363,8 @@ nnoremap <Tab> %
 vnoremap <Tab> %
 
 " Folding
-nnoremap <Space> za
-vnoremap <Space> za
+" nnoremap <Space> za
+" vnoremap <Space> za
 
 " Strip all trailing whitespace from a file, using ,W
 nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
