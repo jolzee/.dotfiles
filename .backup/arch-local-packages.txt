@@ -4,14 +4,11 @@ cylon
 fsearch-git
 hstr
 p3x-onenote
-python2-xcb-proto
 selectdefaultapplication-git
 slack-desktop
-spaceship-prompt-git
 spotify
 teams
 teamviewer
-ulauncher
 vivaldi
 vivaldi-codecs-ffmpeg-extra-bin
 vivaldi-widevine
