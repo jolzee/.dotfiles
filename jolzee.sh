@@ -18,10 +18,10 @@ show_menus() {
   echo "----------------------------------------"
   echo "1. Backup Packages"
   echo "2. Install Pacman Packages"
-  echo "3. DotBot Setup"
+  echo "3. Dot Files Init"
   echo "4. Install Yay"
   echo "5. Install AUR Packages"
-  echo "6. Rank AUR Mirrors for Region"
+  echo "6. Rank AUR Mirrors for Region (requires root)"
   echo "q. Exit"
   read_options
 }
@@ -106,7 +106,7 @@ waitForKeyPress() {
   read -p "Press any key to continue... " -n1 -s
 }
 
-dotBotSetup() {
+dotFilesInit() {
   clear
   echo "Sym-linking all dot files.."
   set -e
@@ -121,6 +121,13 @@ dotBotSetup() {
   git submodule update --init --recursive "${DOTBOT_DIR}"
 
   "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+  ### Check if a directory does not exist ###
+  if [ ! -e ~/.zinit ]; then
+    mkdir ~/.zinit
+    git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
+  fi
+
   waitForKeyPress
   show_menus
 }
@@ -226,7 +233,7 @@ read_options(){
   case $choice in
     1)  backupPackages ;;
     2)  installPacmanPackages ;;
-    3)  dotBotSetup ;;
+    3)  dotFilesInit ;;
     4)  installYay ;;
     5)  installAURPackages ;;
     6)  updateAurMirrorList ;;
