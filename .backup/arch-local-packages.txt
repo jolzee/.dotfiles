@@ -1,5 +1,6 @@
 espanso
 etcher-bin
+cylon
 fsearch-git
 hstr
 p3x-onenote

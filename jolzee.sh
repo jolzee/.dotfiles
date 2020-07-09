@@ -22,6 +22,7 @@ show_menus() {
   echo "4. Install Yay"
   echo "5. Install AUR Packages"
   echo "6. Rank AUR Mirrors for Region (requires root)"
+  echo "7. Cylon Maintenance"
   echo "q. Exit"
   read_options
 }
@@ -132,6 +133,14 @@ dotFilesInit() {
   show_menus
 }
 
+cylonMaintenance() {
+  clear
+  echo "Cylon Maintenance .."
+  cylon
+  waitForKeyPress
+  show_menus
+}
+
 updateAurMirrorList() {
   clear
   echo "Updating AUR mirror list based on region"
@@ -237,6 +246,7 @@ read_options(){
     4)  installYay ;;
     5)  installAURPackages ;;
     6)  updateAurMirrorList ;;
+    7)  cylonMaintenance ;;
     q)  clear && exit 0;;
     *) echo -e "${RED}Can not match with any selected${STD}" && sleep 1
   esac
