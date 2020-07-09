@@ -690,7 +690,8 @@ else
     set bg=dark
 endif
 
-colorscheme molokai
+" colorscheme molokai
+colorscheme one
 
 
 
