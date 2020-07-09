@@ -12,7 +12,7 @@ bindkey -e
 alias open="xdg-open"
 alias d="docker"
 
-alias df="code ~/.dotfiles/"
+alias +df="code ~/.dotfiles/"
 
 alias vi="vim"
 #alias vim="nvim"
