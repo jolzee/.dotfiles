@@ -38,8 +38,6 @@
         path: .config/autostart
     ~/.config/espanso: .config/espanso
     ~/.config/fontconfig: .config/fontconfig
-    ~/.config/geany: .config/geany
-    ~/.config/gpick: .config/gpick
     ~/.config/gtk-2.0: 
         force: true
         path: .config/gtk-2.0
