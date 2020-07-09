@@ -8,6 +8,7 @@ catfish
 celluloid
 cheese
 code
+cmake
 cowsay
 evince
 evolution
