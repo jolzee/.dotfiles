@@ -12,6 +12,8 @@ bindkey -e
 alias open="xdg-open"
 alias d="docker"
 
+alias df="code ~/.dotfiles/"
+
 alias vi="vim"
 #alias vim="nvim"
 alias aedit=" $EDITOR $ZSH_CONFIG/aliases.zsh; source $ZSH_CONFIG/aliases.zsh"
