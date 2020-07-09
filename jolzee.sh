@@ -129,6 +129,8 @@ dotFilesInit() {
     git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
   fi
 
+  chsh -s /bin/zsh
+
   waitForKeyPress
   show_menus
 }
