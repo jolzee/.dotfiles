@@ -39,10 +39,52 @@ alias sign='gpg --detach-sign --armor'
 
 alias SimpleServer='open http://localhost:8000; python -m SimpleHTTPServer'
 
-##### standard aliases (start with a space to be ignored in history)
-alias ls=' exa --group-directories-first'
-alias v="clear; exa --git -h -l --group-directories-first --time-style long-iso --color automatic"
+alias please='/usr/bin/sudo $(history -p !!)'
 
+##### standard aliases (start with a space to be ignored in history)
+
+# Stop after sending count ECHO_REQUEST packets #
+alias ping='ping -c 5'
+alias pping='prettyping --nolegend' # use pretty ping isntead
+
+alias ports='ss -lntu'
+alias oports="sudo lsof -i -P -n | grep -i 'listen'"
+
+# do not delete / or prompt if deleting more than 3 files at a time #
+alias rm='rm -I --preserve-root'
+ 
+# confirmation #
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+ 
+# Parenting changing perms on / #
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+# reboot / halt / poweroff
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+
+alias top="htop"
+
+## this one saved by butt so many times ##
+alias wget='wget -c'
+
+#my default browser
+alias browser='vivaldi-stable'
+
+alias gh='history|grep'
+alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
+alias ls=' exa --group-directories-first'
+alias ll='ls -lh'
+
+alias v="clear; exa --git -h -l --group-directories-first --time-style long-iso --color automatic"
+alias c='clear'
+alias cls='clear'
 
 alias p=' ps aux | grep'
 alias g='git'
