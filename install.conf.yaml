@@ -47,6 +47,15 @@
     ~/.config/alacritty: 
         force: true
         path: .config/alacritty
+    ~/.i3: 
+        force: true
+        path: .config/i3
+    ~/.config/picom: 
+        force: true
+        path: .config/picom
+    ~/.config/mimeapps.list: 
+        force: true
+        path: .config/mimeapps.list
     ~/.config/espanso: 
         force: true
         path: .config/espanso
