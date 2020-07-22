@@ -10,15 +10,19 @@
         path: .vimrc
     ~/.vim: 
         force: true
-        path: .vim
+        path: .config/vim
     ~/.config/nvim:
         force: true
         path: .config/nvim
-    ~/.config/zsh: .zsh
-    ~/.zsh: .zsh
+    ~/.config/zsh: 
+        force: true
+        path: .config/zsh
+    ~/.zsh: 
+        force: true
+        path: .config/zsh
     ~/.zshrc: 
         force: true
-        path: .zsh/zshrc
+        path: .config/zsh/zshrc
     ~/.bash_profile: 
         force: true
         path: .bash_profile
@@ -28,29 +32,30 @@
     ~/.bashrc: 
         force: true
         path: .bashrc
-    ~/.gitconfig: .gitconfig
-    ~/.fonts: .fonts
-    ~/.icons: .icons
-    ~/.themes: .themes
-    ~/.config/alacritty: .config/alacritty
-    ~/.config/autostart: 
+    ~/.gitconfig: 
         force: true
-        path: .config/autostart
-    ~/.config/espanso: .config/espanso
-    ~/.config/fontconfig: .config/fontconfig
-    ~/.config/gtk-2.0: 
+        path: .gitconfig
+    ~/.fonts: 
         force: true
-        path: .config/gtk-2.0
-    ~/.config/gtk-3.0: 
+        path: .fonts
+    ~/.icons: 
         force: true
-        path: .config/gtk-3.0
-    ~/.config/gtk-4.0: 
+        path: .icons
+    ~/.themes: 
         force: true
-        path: .config/gtk-4.0
+        path: .themes
+    ~/.config/alacritty: 
+        force: true
+        path: .config/alacritty
+    ~/.config/espanso: 
+        force: true
+        path: .config/espanso
     ~/.config/neofetch: 
         force: true
         path: .config/neofetch
-    ~/Pictures/wallpapers: .config/wallpapers
+    ~/Pictures/wallpapers: 
+        force: true
+        path: wallpapers
 
 - create:
     - ~/Pictures/wallpapers
