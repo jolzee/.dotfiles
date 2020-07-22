@@ -31,7 +31,7 @@ backupPackages() {
   clear
   echo -n -e "Running Backup Packages.."
 
-  pacman -Qqen > .backup/arch-pacman-packages.txt || echo "pacman failed"
+  pacman -Qqent > .backup/arch-pacman-packages.txt || echo "pacman failed"
   pacman -Qqem > .backup/arch-local-packages.txt || echo "pacman failed"
   #gem list > .backup/gem-packages.txt || echo "gem failed"
   #npm list -g --depth=0 > .backup/npm-packages.txt || echo "npm failed"
