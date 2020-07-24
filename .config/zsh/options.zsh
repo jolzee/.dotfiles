@@ -25,11 +25,25 @@ bindkey '^[[B' down-line-or-search
 if (( ! EUID )); then
     HISTFILE=$ZSH_CACHE/history_root
 else
-    HISTFILE=$ZSH_CACHE/history
+    HISTFILE="$HOME/.zsh_history"
 fi
-SAVEHIST=10000
-HISTSIZE=12000
-setopt share_history append_history extended_history hist_no_store hist_ignore_all_dups hist_ignore_space
+HISTSIZE=10000000
+SAVEHIST=$HISTSIZE
+setopt BANG_HIST                 # Treat the '!' character specially during expansion.
+setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
+setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY             # Share history between all sessions.
+setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicate entries first when trimming history.
+setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_FIND_NO_DUPS         # Do not display a line previously found.
+setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
+setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history file.
+setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
+setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
+setopt HIST_BEEP                 # Beep when accessing nonexistent history.
+export HISTFILE HISTSIZE SAVEHIST
+# setopt share_history append_history extended_history hist_no_store hist_ignore_all_dups hist_ignore_space
 
 # 2x control is completion from history!!!
 zle -C hist-complete complete-word _generic

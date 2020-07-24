@@ -1,8 +1,12 @@
-# @author     Sebastian Tramp <mail@sebastian.tramp.name>
-# @license    http://opensource.org/licenses/gpl-license.php
-#
-# the main RC file (will be linked to ~/.zshrc)
-#
+#  oo          dP                               
+#              88                               
+#  dP .d8888b. 88 d888888b .d8888b. .d8888b.    
+#  88 88'  `88 88    .d8P' 88ooood8 88ooood8    
+#  88 88.  .88 88  .Y8P    88.  ... 88.  ...    
+#  88 `88888P' dP d888888P `88888P' `88888P'    
+#  88~oooooooooooooooooooooooooooooooooooooooooo
+#  dP                                           
+
 
 # take tike to measure boot time
 # bootTimeStart=$(gdate +%s%N)
@@ -60,6 +64,15 @@ foreach file (`echo $sources`)
         # echo $sourceIncludeDuration ms runtime for $file
     fi
 end
+
+# Terminal Color Codes for Startup
+(cat ~/.cache/wal/sequences &)
+
+# Import the colors.
+source "${HOME}/.cache/wal/colors.sh"
+
+# Create the alias.
+alias dmen='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
 
 # bootTimeDuration=$((($(gdate +%s%N) - $bootTimeStart)/1000000))
 # echo $bootTimeDuration ms overall boot duration
