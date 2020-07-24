@@ -53,6 +53,9 @@
     ~/.config/polybar: 
         force: true
         path: .config/polybar
+    ~/.config/dunst: 
+        force: true
+        path: .config/dunst
     ~/.config/picom: 
         force: true
         path: .config/picom
