@@ -50,6 +50,9 @@
     ~/.i3: 
         force: true
         path: .config/i3
+    ~/.config/polybar: 
+        force: true
+        path: .config/polybar
     ~/.config/picom: 
         force: true
         path: .config/picom

@@ -129,7 +129,14 @@ dotFilesInit() {
     git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
   fi
 
-  chsh -s /bin/zsh
+  currentShell=$(echo $SHELL)
+
+  if [ "$currentShell" != "/bin/zsh" ]
+  then
+    echo "zsh isn't the default shell, setting default."
+    chsh -s /bin/zsh
+  fi
+
 
   waitForKeyPress
   show_menus
