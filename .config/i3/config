@@ -40,12 +40,15 @@ bindsym $mod+d exec --no-startup-id dmenu_recency -fn 'Fira Code-16'
 
 ###### EXECUTE PROGRAMS ######
 
-bindsym $mod+e       exec pcmanfm
+bindsym $mod+e       exec nemo
 bindsym $mod+Shift+e exec alacritty -t fexplorer -e ranger
-bindsym $mod+w       exec vivaldi-stable
+bindsym $mod+w       exec  --no-startup-id vivaldi-stable
 bindsym $alt+Tab     exec rofi -show window
 bindsym $mod+t       exec $terminal
 bindsym $alt+F2      exec rofi -show run
+bindsym $mod+F4      exec  --no-startup-id code &
+bindsym $mod+F5      exec  --no-startup-id spotify &
+bindsym $mod+F6      exec  --no-startup-id vivaldi-stable --app=https://mail.google.com/mail/u/0/#inbox &
 
 bindsym --release Print exec scrot
 bindsym --release Shift+Print exec scrot -s
@@ -61,7 +64,7 @@ exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec pavucontrol
+bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 
 ################################################################################################
 
@@ -72,9 +75,9 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec vivaldi-stable
-bindsym $mod+F3 exec pcmanfm
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec terminal -e 'mocp'
+bindsym $mod+F3 exec nemo
+bindsym $mod+Shift+F3 exec gksudo nemo
+# bindsym $mod+F5 exec terminal -e 'mocp'
 # bindsym $mod+t exec --no-startup-id pkill picom
 # bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -196,7 +199,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
+# assign [class="Vivaldi-stable"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
 

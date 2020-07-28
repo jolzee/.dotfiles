@@ -1,0 +1,22 @@
+XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CONFIG_HOME
+USER_BIN="$HOME/.bin:$HOME/.local/bin"
+export PATH="$PATH:$USER_BIN"
+export EDITOR=vim
+export BROWSER="vivaldi-stable"
+
+setxkbmap -option caps:escape &
+
+# Remove ugly X root cursor
+xsetroot -cursor_name left_ptr &
+
+# xrandr --output HDMI1 --mode 1920x1200 --primary --left-of HDMI2
+# set dual monitor = home settup
+# [ -n '$(xrandr | grep "HDMI2 connected")' ] && xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0
+
+xset r rate 400 38 & # Increase keyboard speed
+numlockx on &
+wal -R &
+
+# Hide the mouse when inactive:
+unclutter --timeout 2 &

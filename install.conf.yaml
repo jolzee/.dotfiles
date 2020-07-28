@@ -5,6 +5,9 @@
 - clean: ['~']
 
 - link:
+    ~/.xprofile: 
+        force: true
+        path: .xprofile
     ~/.vimrc: 
         force: true
         path: .vimrc
